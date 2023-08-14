@@ -48,6 +48,7 @@ export type CssSelectorGeneratorOptionsInput = Partial<{
     includeTag: boolean;
     maxCombinations: number;
     maxCandidates: number;
+    assumeCorrect: boolean;
 }>;
 export type CssSelectorGeneratorOptions = Required<Omit<CssSelectorGeneratorOptionsInput, "selectors"> & {
     selectors: CssSelectorTypes;
