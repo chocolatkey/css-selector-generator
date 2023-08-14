@@ -15,7 +15,7 @@ export function getCssSelector(
   needle: unknown,
   custom_options: CssSelectorGeneratorOptionsInput = {},
 ): CssSelector {
-  const elements = sanitizeSelectorNeedle(needle);
+  const elements = sanitizeSelectorNeedle(needle, !!custom_options.assumeCorrect);
   const options = sanitizeOptions(elements[0], custom_options);
   let partialSelector = "";
   let currentRoot = options.root;

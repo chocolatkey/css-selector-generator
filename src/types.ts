@@ -83,6 +83,8 @@ export type CssSelectorGeneratorOptionsInput = Partial<{
   maxCombinations: number;
   // Maximum number of selector candidates to be tested for each element. This is handy for performance reasons, e.g. when elements can produce large number of combinations of various types of selectors.
   maxCandidates: number;
+  // Assume the given elements are actual instances of HTML Elements without checking. Helps with cross-context (iframe) usage.
+  assumeCorrect: boolean;
 }>;
 
 export type CssSelectorGeneratorOptions = Required<

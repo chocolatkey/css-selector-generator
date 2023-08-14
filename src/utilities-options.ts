@@ -143,5 +143,6 @@ export function sanitizeOptions(
     includeTag: !!options.includeTag,
     maxCombinations: sanitizeMaxNumber(options.maxCombinations),
     maxCandidates: sanitizeMaxNumber(options.maxCandidates),
+    assumeCorrect: !!options.assumeCorrect,
   };
 }
